@@ -17,13 +17,8 @@
     <script>
         // Add event listener for the mousemove event
         window.addEventListener("mousemove", function (e) {
-            // Get the mouse position relative to the canvas
             var posX = e.clientX;
             var posY = e.clientY;
-            // Get the canvas and context
-            // var canvas = document.getElementById("canvas");
-            // var ctx = canvas.getContext("2d");
-            // Draw the image
             const box = document.getElementById("box").style;
             box.backgroundColor = 'purple';
             box.width = '100px';
@@ -36,10 +31,7 @@
 </head>
 
 <body>
-    <!-- <canvas id="canvas" width="500" height="500"></canvas> -->
-    <div id="box">
-
-    </div>
+    <div id="box"></div>
 </body>
 
 </html>
