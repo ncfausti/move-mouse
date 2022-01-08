@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: purple;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+    </style>
+    <script>
+        // Add event listener for the mousemove event
+        window.addEventListener("mousemove", function (e) {
+            // Get the mouse position relative to the canvas
+            var posX = e.clientX;
+            var posY = e.clientY;
+            // Get the canvas and context
+            // var canvas = document.getElementById("canvas");
+            // var ctx = canvas.getContext("2d");
+            // Draw the image
+            const box = document.getElementById("box").style;
+            box.backgroundColor = 'purple';
+            box.width = '100px';
+            box.height = '100px';
+            box.position = 'absolute';
+            box.left = posX + 'px';
+            box.top = posY + 'px';
+        });
+    </script>
+</head>
+
+<body>
+    <!-- <canvas id="canvas" width="500" height="500"></canvas> -->
+    <div id="box">
+
+    </div>
+</body>
+
+</html>
